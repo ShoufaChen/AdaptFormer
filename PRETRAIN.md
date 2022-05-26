@@ -29,4 +29,4 @@ self.mlp_drop = nn.Dropout(drop)
 
 Therefore, we need to convert the checkpoint provided by [VideoMAE](https://github.com/MCG-NJU/VideoMAE/blob/main/MODEL_ZOO.md#kinetics-400) using [convert.py](convert.py).
 
-Or you can directly use our preprocessed [videomae_pretrain_vit_b_1600.pth]().
+Or you can directly use our preprocessed [videomae_pretrain_vit_b_1600.pth](https://github.com/ShoufaChen/AdaptFormer/releases/download/v0.1/videomae_pretrain_vit_b_1600.pth).
