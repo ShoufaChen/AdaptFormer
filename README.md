@@ -2,13 +2,13 @@
 
 ## AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition
 
-### [Project Page](http://www.shoufachen.com/adaptformer-page/) |  [arXiv](https://arxiv.org/abs/)
+### [Project Page](http://www.shoufachen.com/adaptformer-page/) |  [arXiv](https://arxiv.org/abs/2205.13535)
 
 ![teaser](figs/teaser.gif)
 </div>
 
 
-This is a PyTorch implementation of the paper [AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition](https://arxiv.org/abs/).
+This is a PyTorch implementation of the paper [AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition](https://arxiv.org/abs/2205.13535).
 
 [Shoufa Chen](https://www.shoufachen.com/)<sup>1</sup>\*,
 [Chongjian Ge](https://chongjiange.github.io/)<sup>1</sup>\*,
@@ -54,7 +54,7 @@ on each of 8 nodes. `--master_addr` is set as the ip of the node 0. and `--node_
 To obtain the pre-trained checkpoint, see [PRETRAIN.md](PRETRAIN.md).
 ### Acknowledgement
 
-The project is based on [MAE](), [VideoMAE](), [timm](), and [MAM](https://github.com/jxhe/unify-parameter-efficient-tuning).
+The project is based on [MAE](https://github.com/facebookresearch/mae), [VideoMAE](https://github.com/MCG-NJU/VideoMAE), [timm](https://github.com/rwightman/pytorch-image-models), and [MAM](https://github.com/jxhe/unify-parameter-efficient-tuning).
 Thanks for their awesome works.
 
 ### Citation
@@ -62,7 +62,7 @@ Thanks for their awesome works.
 @article{chen2022adaptformer,
       title={AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition},
       author={Chen, Shoufa and Ge, Chongjian and Tong, Zhan and Wang, Jiangliu and Song, Yibing and Wang, Jue and Luo, Ping},
-      journal={arXiv preprint arXiv:},
+      journal={arXiv preprint arXiv:2205.13535},
       year={2022}
 }
 ```
