@@ -1,5 +1,7 @@
 ## Prepare Pre-trained Checkpoints
 
+
+### Video
 We directly use existing pre-trained model. For video,
 we use Kinetics-400 pre-trained model by [VideoMAE](https://github.com/MCG-NJU/VideoMAE/blob/main/MODEL_ZOO.md#kinetics-400) for 1600 epochs.
 
@@ -30,3 +32,8 @@ self.mlp_drop = nn.Dropout(drop)
 Therefore, we need to convert the checkpoint provided by [VideoMAE](https://github.com/MCG-NJU/VideoMAE/blob/main/MODEL_ZOO.md#kinetics-400) using [convert.py](convert.py).
 
 Or you can directly use our preprocessed [videomae_pretrain_vit_b_1600.pth](https://github.com/ShoufaChen/AdaptFormer/releases/download/v0.1/videomae_pretrain_vit_b_1600.pth).
+
+
+
+### Image
+[mae_pretrain_vit_b.pth](https://github.com/ShoufaChen/AdaptFormer/releases/download/v0.1/mae_pretrain_vit_b.pth)

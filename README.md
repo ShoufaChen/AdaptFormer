@@ -23,7 +23,7 @@ This is a PyTorch implementation of the paper [AdaptFormer: Adapting Vision Tran
 ### Catalog
 
 - [x] Video code
-- [ ] Image code
+- [x] Image code
 
 ### Usage
 
@@ -39,6 +39,7 @@ See [DATASET.md](DATASET.md).
 #### Training
 Start
 ```bash
+# video
 OMP_NUM_THREADS=1 python3 -m torch.distributed.launch \
     --nproc_per_node=8 --nnodes=8 \
     --node_rank=$1 --master_addr=$2 --master_port=22234 \
@@ -50,6 +51,17 @@ OMP_NUM_THREADS=1 python3 -m torch.distributed.launch \
     --ffn_adapt
 ```
 on each of 8 nodes. `--master_addr` is set as the ip of the node 0. and `--node_rank` is 0, 1, ..., 7 for each node.
+
+```bash
+# image
+python3 -m torch.distributed.launch --nproc_per_node=8 --use_env main_image.py \
+    --batch_size 128 --cls_token \
+    --finetune /path/to/pre_trained/mae_pretrain_vit_b.pth \
+    --dist_eval --data_path /path/to/data \
+    --output_dir /path/to/output  \
+    --drop_path 0.0  --blr 0.1 \
+    --dataset cifar100 --ffn_adapt
+```
 
 To obtain the pre-trained checkpoint, see [PRETRAIN.md](PRETRAIN.md).
 ### Acknowledgement
