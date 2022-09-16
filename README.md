@@ -1,6 +1,6 @@
 <div align="center">
 
-## AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition
+## [NeurIPS 2022] AdaptFormer: Adapting Vision Transformers for Scalable Visual Recognition
 
 ### [Project Page](http://www.shoufachen.com/adaptformer-page/) |  [arXiv](https://arxiv.org/abs/2205.13535)
 
